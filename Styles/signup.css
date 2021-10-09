@@ -59,9 +59,9 @@ ul.menu{
 	background-color:#550A35;
 	padding:0px;
 	margin: 10px 0px 20px 0px;
-	overflow:hidden;
-	
+	overflow:hidden;	
 }
+
 li.menu{
 	float:right;
 }
@@ -77,8 +77,6 @@ li a{
 	background-color:purple;
 	text-align:center;
 	border-radius: 10px;
-	
-
 }
 
 li a:hover{
@@ -128,7 +126,7 @@ body
 	outline: none;
 	cursor: pointer;
 	color: #1c8adb;
-	width: 100%;
+	width: 70%;
 }
 .facebook
 {
@@ -140,6 +138,24 @@ body
 	outline: none;
 	cursor: pointer;
 	color: #21afde;
-	width: 100%;
+	width: 70%;
+}
+
+.signin_button{
+	padding: 5px;
+	border-radius: 10px;
+	font-size: 15px;
+	margin: 10px 0;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	color: white;
+	background-color: rgb(57, 151, 206);
+	width: 20%;
+}
+
+a:visited {
+	color: white;
+	text-decoration: none;
 }
 
