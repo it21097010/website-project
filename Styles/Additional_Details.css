@@ -1,0 +1,54 @@
+.Details_Form{
+	width: 430px;
+	border: none;
+	background-position:right;
+	background:rgba(0,0,0,0.5);
+	padding: 10px 50px 50px 50px;
+	margin:10px 0px 20px 420px;
+	color: #ffffff;
+}
+.formElement{
+	font-size: 15px;
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	border:none;
+	background: transparent;
+	border-bottom:2px solid rgb(8, 8, 8) ;
+	margin: 6px;
+	border-radius: 6px;
+	color: white;
+
+}
+.Details_Form #formdate{
+
+	background-color: rgb(255, 255, 255,);
+	border: none;
+	border-radius: 6px;
+
+	
+};
+.formImage{
+	position: relative;
+	left: -900px;
+
+}
+
+.FormSubmitButton{
+	height: 40px;
+	border: none;
+	color:white;
+	background-color: violet;
+	border-radius: 15px;
+	font-size: 14px;
+	opacity: .8;
+}
+.FormSubmitButton:hover{
+	cursor: pointer;
+	opacity: 1;
+}
+.uploadBtn{
+	overflow: hidden;
+	background: transparent;
+	border: none;
+	
+}

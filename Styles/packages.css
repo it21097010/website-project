@@ -1,0 +1,50 @@
+.Starter_Package_card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    max-width: 400px;
+    margin-left: 30px;
+    top: 200px;
+    position: relative;
+    text-align: center;
+    font-family: arial;
+    background-color: rgb(19, 90, 19);
+  }
+  .Premium_Package_card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    max-width: 400px;
+    position: relative;
+    top: -290px;
+    left: 450px;
+    text-align: center;
+    font-family: arial;
+    background-color: rgb(19, 90, 19);
+  }
+  .Business_Package_card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    max-width: 400px;
+    position: relative;
+    top: -580px;
+    right: -870px;
+    text-align: center;
+    font-family: arial;
+    background-color: rgb(2, 1, 73);
+  }
+.price {
+    color: rgb(189, 180, 180);
+    font-size: 22px;
+  }
+  
+  .packages_card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(14, 177, 82);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .packages_card button:hover {
+    opacity: 0.7;
+  }

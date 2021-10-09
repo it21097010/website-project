@@ -1,0 +1,85 @@
+.video_image8K{
+    width: 40%;
+    height: auto;
+    position: relative;
+    left: 35%; 
+    box-shadow:0 6px 20px 0 rgba(180, 15, 185, 0.4);
+}
+.video_image4K{
+    width: 44%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    bottom: 100px;
+    box-shadow:0 6px 20px 0 rgba(149, 117, 150, 0.4);
+
+}
+.video_image2K{
+    width: 40%;
+    height: auto;
+    position: relative;
+    left: 30px;
+    bottom: 450px;
+    box-shadow:0 6px 20px 0 rgba(180, 15, 185, 0.4);
+}
+
+.product_button1 {
+    border: none;
+    margin-bottom: 140px;
+    outline: 0;
+    padding: 10px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    width: 40%;
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+    right: 70px;
+    transition: 1s;
+  }  
+  .product_button1:hover {
+    opacity: 0.7;
+    background-color: orange;
+    cursor: pointer;
+}
+.product_button2 {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    width: 44%;
+    font-size: 20px;
+    position: relative;
+    top: -70px;
+    right: -76px;
+    transition: 1s;
+  }
+  
+  .product_button2:hover {
+    opacity: 0.7;
+    background-color: orange;
+    cursor: pointer;
+}
+.product_button3 {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    width: 40%;
+    font-size: 20px;
+    position: relative;
+    bottom: 420px;
+    right: 490px;
+    transition: 1s;
+  }
+  
+  .product_button3:hover {
+    opacity: 0.7;
+    background-color: orange;
+    cursor: pointer;
+}

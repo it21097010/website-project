@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+ <head>
+  <title>About us</title>
+	  <link rel="stylesheet" href="Styles/About us.css"/>
+	  <script src="Scripts/About us2.js"></script>
+ </head>
+
+ <body>
+  <a href="Home.html"><img class="logo" src="Images/logo.jpeg" alt="logo" width:"10%" height="150px"></a>
+  <button class="button1" ><a href="signup.html" style="text-decoration:none">Sign up</a></button>
+  <button class="button2"><a href="signin.html" style="text-decoration:none">Sign in</a></button>
+  <button class="button3"><a href="contactus.html" style="text-decoration:none">Contact Us</a></button>
+  <div>
+    <input type="text" class="search" placeholder="Search item">
+    <button class="search_1"><img src="Images/search_Icon.png" height="25px" width="25px"></button>
+  </div>
+  
+
+
+  <ul class="menu">
+    <li class="menu"><a href="aboutus.html">About Us</li></a>
+    <li class="menu"><a href="catergories.html">Catergories</li></a>
+    <li class="menu"><a href="projects.html">Projects</li></a>
+    <li class="menu"><a href="Home.html">Home</li></a>
+  </ul>
+
+  <hr>
+
+<center class="loony"><img src="Images/logo.jpeg" width= 250px height= 250px></center>
+
+<p class="topalign">
+  <center class ="para">
+    Adspace is a website that helps customers to create the necessary advertisements to popularize their products & services by giving customers our attention and sharing our experience. 
+  </center>
+</p>
+
+<div class="star-rating">
+      <input type="radio" name="stars" id="star-a" value="5"/>
+      <label for="star-a"></label>
+
+      <input type="radio" name="stars" id="star-b" value="4"/>
+      <label for="star-b"></label>
+  
+      <input type="radio" name="stars" id="star-c" value="3"/>
+      <label for="star-c"></label>
+  
+      <input type="radio" name="stars" id="star-d" value="2"/>
+      <label for="star-d"></label>
+  
+      <input type="radio" name="stars" id="star-e" value="1"/>
+      <label for="star-e"></label>
+</div>
+<h1 class="ratingss"><center> Rate us</center> </h1>
+
+<section id="app">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="comment">
+        <p v-for="items in item" v-text="items"></p>
+          </div>
+          </div>
+          </div>
+      <div class="row">
+        <div class="col-6">
+      <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+          <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <div class="footer">
+    <img src="Images/logo.jpeg" width="8%">
+    <font class="footerText1"><a href="mailto:adspace@contactus.com"><b>Email:adspace@contactus.com</b></a><br><br>Phone Number: +94 234-567-8944</font>
+    <font class="footerText2"><a href="About us.html">About Us</a></font><br>
+    <font class="footerText3"><a href="contactus.html">Contact Us</a></font>
+   
+  </div>
+
+</html>
