@@ -46,7 +46,6 @@ body
 }
 
 
-}
 .title1{
 	position:absolute;
 	top:32px;
@@ -93,10 +92,11 @@ body
 }
 .sign-up-form
 {
-	width: 300px;
+	width: 500px;
 	box-shadow: 0 0 3px 0 rgba(0,0,0,0,3);
 	background: #fff;
 	padding: 20px;
+	border-radius: 20px;
 	margin: 1% auto 0;
 	text-align: center;
 }
@@ -104,6 +104,14 @@ body
 {
 	color: #1c8adb;
 	margin-bottom: 30px;
+}
+.sign-up-form h4
+{
+	position: relative;
+	color: black;
+	margin-bottom: -20px;
+	left:35px;
+	text-align: left;
 }
 .input-box
 {
