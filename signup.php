@@ -4,11 +4,12 @@ $FirstName=$_POST['Fname'];
 $LastName=$_POST['Lname'];
 $username=$_POST['UserName'];
 $password=$_POST['Password'];
+$email=$_POST['email'];
 
 
 
 
-$sql="INSERT INTO member (Username,Password,First_Name,Last_Name) values ('$username','$password','$FirstName','$LastName')";
+$sql="INSERT INTO member (Username,Password,First_Name,Last_Name,email) values ('$username','$password','$FirstName','$LastName','$email')";
 $conn->query($sql);
 if($conn->query($sql)){
     echo "Inserted successfully";
