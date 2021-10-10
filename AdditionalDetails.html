@@ -30,14 +30,13 @@
 
   <hr>
 
-    <form action="AdditionalDetails.php" method="POST" class="Details_Form">
-        
+    <form action="AdditionalDetails.php" method="POST" class="Details_Form" enctype="multipart/form-data" >        
         <center><h2>Additonal Details</h2></center>
-        <br><br>Email<br><input type="text" name="email" class="formElement" width="50px"  placeholder="Enter email address other than the registered email"><br>
-        <br>Deadline date <br><br> <input type="date" name="date" placeholder="mm-dd-yyyy" min="01-01-2021" max="12-30-2050" id="formdate" >
-        <h3>Special Instructions</h3><textarea class="formElement" placeholder="Enter the instructions" rows="6" cols="50" required></textarea><br>Please attach your supporting document in .zip format (eg:company logo,photos,sample videos).<br><br>Max size 100mb</br><br><br>
-        <input type="file" name="files_upload" class="uploadBtn"/><br><br>
-        <input type="submit" value="Submit" class="FormSubmitButton">
+        <br><br>Contact Number<br><input type="text" name="PhoneNumber" class="formElement" width="50px"  placeholder="0112345678" required ><br>
+        <br>Deadline date <br><br> <input type="date" name="date"  id="formdate" required >
+        <h3>Special Instructions</h3><input type="text"  class="formElement" name="InstructionsToEditor" placeholder="Enter the instructions" rows="6" cols="50" required></input><br>Please attach your supporting document in .zip or .rar and.7zip format (eg:company logo,photos,sample videos).<br><br>Max size 100mb</br><br><br>
+        <input type="file" name="files_upload" class="uploadBtn" accept=".zip,.rar,.7zip"/><br><br>
+        <input type="submit" value="Submit" name=submit class="FormSubmitButton">
        <input type="reset" class="FormSubmitButton" value="Reset">
     </form>
 
