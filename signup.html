@@ -4,6 +4,7 @@
 <head>
   <title>Sign Up</title>
   <link rel="stylesheet" href="Styles/signup.css" />
+  <script src="Scripts/signup.js"></script>
 </head>
 
 <body>
@@ -31,19 +32,20 @@
     <h1> Create account</h1>
     <form>
       <h4>First Name</h4><br>
-      <input type="firstname" class="input-box" placeholder="Enter your first name"><br>
+      <input type="firstname" class="input-box" placeholder="Enter your first name" required><br>
       <h4>Last Name</h4><br>
-      <input type="lastname" class="input-box" placeholder="Enter your last name"><br>
+      <input type="lastname" class="input-box" placeholder="Enter your last name" required><br>
       <h4>Username</h4><br>
-      <input type="username" class="input-box" placeholder="Username"><br>
+      <input type="username" class="input-box" placeholder="Username" required><br>
       <h4>E-mail</h4><br>
-      <input type="email" class="input-box" placeholder="Enter your email"><br>
+      <input type="email" class="input-box" placeholder="Enter your email" required><br>
       <h4>Password</h4><br>
-      <input type="password" class="input-box" placeholder="Create a password"><br>
+      <input type="password" class="input-box" placeholder="Create a password" id="Password" required><br>
       <h4>Confirm Password</h4><br>
-      <input type="confirmpassword" class="input-box" placeholder="Confirm your password"><br>
-      <p><span><input type="checkbox"></span> Agree to the terms of services</p>
-      <button type="submit" class="signup">Sign up</button>
+      <input type="confirmpassword" class="input-box" placeholder="Confirm your password" id="ConfirmPassword" onkeyup="checkPassword()" required><br>
+      <span id="displayMassage"></span>
+      <p><span><input type="checkbox" id="checkbox" onclick="enableButton()"></span> Agree to the terms of services</p>
+      <button type="submit" class="signup" id="submitBtn" disabled>Sign up</button>
       <hr>
       <p class="or">OR</p>
       <button class="facebook">Login with facebook</button>
@@ -52,8 +54,13 @@
   </div>
 
   <hr>
-
-
 </body>
 
+
+
+
 </html>
+
+
+
+  
