@@ -15,6 +15,19 @@ body
 	border-radius: 15px;
 	
 }
+.body_head_text #text_in_body{
+	background-image:linear-gradient(90deg,orange,blue);
+	background-size: 0% 3px;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	transition: background-size 300ms ease ;
+	font-size: 40px;
+
+
+}
+.body_head_text #text_in_body:hover{
+	background-size:100% 3px;
+}
 
 .button2{
 	position:absolute; 
