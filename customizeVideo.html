@@ -3,7 +3,7 @@
 <head>
     <title>Video customize</title>
     <link rel="stylesheet" href="Styles/Home.css" />
-    <link rel="stylesheet" href="Styles/customizevideo.css" />
+    <link rel="stylesheet" href="Styles/customize.css" />
     <script src="Scripts/customize.js"></script>
 
 </head>
@@ -16,7 +16,8 @@
     <div>
         <input type="text" class="search" placeholder="Search item">
         <button class="search_1"><img src="Images/search_Icon.png" height="25px" width="25px"></button>
-
+    </div>
+   
 
 
 
@@ -34,19 +35,21 @@
         <center>Customize your video</center>
     </font>
     <br><br>
+    <form action="customizeVideo.php" method="post">
     <div>
-        <img src="Images/8k_video.png" alt="8k_video" class="video_image8K" id="image1" onmouseover="changeImage1()">
-        <button class="product_button1">Add to cart</button>
+        <img src="Images/8k_video.png" alt="8k_video"  class="video_image8K" id="image1" onmouseover="changeImage1()">
+        <button class="product_button1" name="8Kvideo" >Add to cart</button>
     </div>><br>
     <div>
         <img src="Images/4k_video.png" alt="4k_video" class="video_image4K " id="image2" onmouseover="changeImage2()">
-        <button class="product_button2">Add to cart</button>
+        <button class="product_button2" name="4Kvideo">Add to cart</button>
     </div>>
     <div>
         <img src="Images/2k_video.png" alt="2k_video" class="video_image2K" id="image3" onmouseover="changeImage3()">
-        <button class="product_button3">Add to cart</button>
+        <button class="product_button3" name="2Kvideo">Add to cart</button>
     </div>>
     </div>
+</form>
 
 
 
