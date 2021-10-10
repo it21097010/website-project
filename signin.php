@@ -8,7 +8,7 @@ if(isset($_SESSION['Username'])){
 else{
     $username=$_POST['Username'];
     $password=$_POST['Password'];
-    $sql="SELECT Username,First_Name FROM member WHERE Username='$username' AND Password='$password'";
+    $sql="SELECT Member_ID,First_Name FROM member WHERE Username='$username' AND Password='$password'";
 		$result = mysqli_query($conn,$sql) or die(mysqli_error());
         if(mysqli_num_rows($result) > 0){
             while($row = mysqli_fetch_assoc($result)) {

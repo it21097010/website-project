@@ -9,8 +9,5 @@ $conn = mysqli_connect($server,$username,$password,$dbname);
 if($conn->connect_error){
     die("Connection failed: " . $con->connect_error);
  }
- else{
-     header('location:Home.html');
- }
-
+ 
 ?>
