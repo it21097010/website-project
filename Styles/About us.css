@@ -118,6 +118,7 @@ button.primaryContained {
 button.primaryContained:hover {
 	background: #9201A8;
 }
+
 body
 {
 	background-image:url("../Images/background.jpg");
@@ -273,4 +274,3 @@ a:visited {
 	color: white;
 	text-decoration: none;
 }
-
