@@ -13,7 +13,7 @@ $sql="INSERT INTO member (Username,Password,First_Name,Last_Name,email) values (
 $conn->query($sql);
 if($conn->query($sql)){
     echo "Inserted successfully";
-    echo"<script>location.href='signin.php'</script>";
+    echo"<script>location.href='signin.html'</script>";
     }
     else{
     echo "Error:". $conn->error;
