@@ -24,8 +24,8 @@ else{
 
 
 }
-
-
-
+if(isset($_POST['createAcc'])){
+    header ('Location:signup.html');
+}
 
 ?>
