@@ -15,13 +15,15 @@ require 'index.php';
 ?>
 <?php
 $id=$_SESSION['id'];
-$data="SELECT Username,First_Name FROM member WHERE Member_ID='$id'";
+$data="SELECT Member_ID,Username,First_Name,Last_Name,email FROM member WHERE Member_ID='$id'";
 $result=$conn->query($data) or die(mysqli_error());
 if ($result-> num_rows>0){
 	while($row=$result->fetch_assoc()){
-		
+		$memberID=$row['Member_ID'];
 		$username=$row['Username'];
-		$name=$row['First_Name'];
+		$Fname=$row['First_Name'];
+    $Lname=$row['Last_Name'];
+    $email=$row['email'];
 		
 	}
 	
@@ -33,7 +35,7 @@ if ($result-> num_rows>0){
   <title>Dashboard</title>
   <link rel="stylesheet" href="Styles/dashboard.css" />
   <link rel="stylesheet" href="Styles/Home.css" />
-  
+  <link rel="stylesheet" href="Styles/signin.css" />
 
 </head>
 
@@ -60,7 +62,20 @@ if ($result-> num_rows>0){
   </ul>
 <font color="white">
   <center><hr><h1>Welcome <?php echo"$username"?></h1></center>
-  
+  <div class="sign-in-form">
+    <h1> User Profile<br></h1><h4>Update your details</h4>
+    <form action="updateProfile.php" method="post">
+     <h4>Email</h4>
+      <input type="email" name="email" class="input-box" placeholder=" <?php echo"$email"?>">
+      <h4>First name</h4>
+      <input type="text" name="Fname" class="input-box" placeholder=" <?php echo"$Fname"?>">
+      <h4>Last name</h4>
+      <input type="text" name="Lname" class="input-box" placeholder=" <?php echo"$Lname"?>">  
+      <button type="submit" name="$memberID"class="signin-btn">Update</button>
+      <button type="reset" class="signin-btn">Reset</button>
+    </form>
+  </div>
+
 </font>
 <br>  
   <hr>
