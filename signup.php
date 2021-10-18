@@ -10,7 +10,7 @@ $email=$_POST['email'];
 
 
 $sql="INSERT INTO member (Username,Password,First_Name,Last_Name,email) values ('$username','$password','$FirstName','$LastName','$email')";
-$conn->query($sql);
+
 if($conn->query($sql)){
     echo "Inserted successfully";
     echo"<script>location.href='signin.html'</script>";

@@ -21,13 +21,13 @@ if(isset($_POST['submit'])){
 
     $sql = "INSERT INTO addtionaldetails (PhoneNumber,date,massage,File_Name)VALUES('$phone_number','$date','$massage','$filename')";
   
-  
-    $conn->query($sql);
+    if($conn->query($sql)){
     if (move_uploaded_file($tempname, $folder))  {
         header('location:Cart.html');
     }else{
        echo "Failed to upload file";
-    }
+    }}
+    else{   echo "Error:". $conn->error;}
 }
 
 
