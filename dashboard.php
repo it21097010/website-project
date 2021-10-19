@@ -63,8 +63,14 @@ if ($result-> num_rows>0){
 <font color="white">
   <center><hr><h1>Welcome <?php echo"$username"?></h1></center>
   <div class="sign-in-form">
-    <h1> User Profile<br></h1><h4>Update your details</h4>
+    <h1> User Profile<br></h1>
+    <?php
+    
+    ?>
+    <img src="../../Adspace/Images/profile1.jpg" height=100 width=100>
+    <h4>Update your details</h4>
     <form action="updateProfile.php" method="post">
+
      <h4>Email</h4>
       <input type="email" name="email" class="input-box" placeholder=" <?php echo"$email"?>">
       <h4>First name</h4>
